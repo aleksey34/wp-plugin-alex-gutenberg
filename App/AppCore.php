@@ -28,7 +28,6 @@ class AppCore {
 
 	private function addRequire(){
 
-		require_once plugin_dir_path(__DIR__) . 'App/include.php';
 
 		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Gutenberg.php';
 
