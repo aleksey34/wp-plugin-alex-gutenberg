@@ -1,7 +1,7 @@
 import  {  MediaUpload, MediaUploadCheck } from   "@wordpress/block-editor";// wp.blockEditor;
 import {Button, Card, CardBody, CardHeader, ResponsiveWrapper} from "@wordpress/components"; // wp.components;
 import  { __ } from   "@wordpress/i18n"  ;
-import {AddListItemBtn} from "../../assets/common-components/AddListItemBtn";
+import {AddListItemBtn} from "../../assets/components/AddListItemBtn";
 import SliderItem from "./components/slider-item";
 
 

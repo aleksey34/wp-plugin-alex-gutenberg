@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/widgets/newsletter-widget/components/NewsletterBody.js":
-/*!********************************************************************!*\
-  !*** ./src/widgets/newsletter-widget/components/NewsletterBody.js ***!
-  \********************************************************************/
+/***/ "./src/widgets/newsletter-widget/components/NewsletterBody/index.js":
+/*!**************************************************************************!*\
+  !*** ./src/widgets/newsletter-widget/components/NewsletterBody/index.js ***!
+  \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -64,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/widgets/newsletter-widget/editor.scss");
-/* harmony import */ var _components_NewsletterBody__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/NewsletterBody */ "./src/widgets/newsletter-widget/components/NewsletterBody.js");
+/* harmony import */ var _components_NewsletterBody__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/NewsletterBody */ "./src/widgets/newsletter-widget/components/NewsletterBody/index.js");
 
 
 
@@ -251,7 +251,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_NewsletterBody__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NewsletterBody */ "./src/widgets/newsletter-widget/components/NewsletterBody.js");
+/* harmony import */ var _components_NewsletterBody__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NewsletterBody */ "./src/widgets/newsletter-widget/components/NewsletterBody/index.js");
 
 /**
  * React hook that is used to mark the block wrapper element.

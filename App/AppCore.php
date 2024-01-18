@@ -2,14 +2,6 @@
 
 namespace AlexGutenberg\App;
 
-//use AlexCustomizer\App\FooterSection\FooterSection;
-//use AlexCustomizer\App\SocialSection\SocialSection;
-
-//use WP_Customize_Color_Control;
-//use WP_Customize_Image_Control;
-//use WP_Customize_Manager;
-
-
 use AlexGutenberg\App\Gutenberg\Gutenberg;
 
 class AppCore {
