@@ -42,11 +42,20 @@ import { useSelect } from "@wordpress/data";
 
     export default function Edit({attributes:{title} , setAttributes}) {
 
-    	const categories = useSelect( ( select ) =>
-		 select( 'core' ).getEntityRecords( 'taxonomy', 'category', // may be -category and others
-			 { per_page: -1, orderby: 'name', order: 'asc',
-				 _fields: 'id,name,slug,link' } ) // !!!! поле id обязательно!!!! иначе не будет работать
-	 );
+    // 	const data = useSelect( ( select ) =>
+	// 	 select( 'core' ).getEntityRecords( 'taxonomy', 'category', // may be -category and others
+	// 		 { per_page: -1, orderby: 'name', order: 'asc',
+	// 			 _fields: 'id,name,slug,link' } ) // !!!! поле id обязательно!!!! иначе не будет работать
+	// );
+
+    	const categories  =useSelect( ( select ) =>
+			select( 'core' ).getEntityRecords( 'taxonomy', 'category', // may be -category and others
+				{ per_page: -1, orderby: 'name', order: 'asc',
+					_fields: 'id,name,slug,link,count' } ) // !!!! поле id обязательно!!!! иначе не будет работать
+	);
+
+
+
 
         const setTitle = (newTitle) =>{
         	setAttributes({title: newTitle});
@@ -80,8 +89,14 @@ import { useSelect } from "@wordpress/data";
 							{
 								categories && categories.map( (category)=>{
 									return (
-										<li key={category.id}><a href={category.link}> {category.name} </a></li>
-									)
+									<li>
+										<a key={category.id} href="{category.link}">
+											<i className="fa fa-folder-open-o" aria-hidden="true"></i>
+											{category.name}
+											<span> {category.count} </span>
+										</a>
+									</li>
+								)
 								})
 							}
 						</ul>

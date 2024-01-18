@@ -70,13 +70,19 @@ function Edit({
   },
   setAttributes
 }) {
+  // 	const data = useSelect( ( select ) =>
+  // 	 select( 'core' ).getEntityRecords( 'taxonomy', 'category', // may be -category and others
+  // 		 { per_page: -1, orderby: 'name', order: 'asc',
+  // 			 _fields: 'id,name,slug,link' } ) // !!!! поле id обязательно!!!! иначе не будет работать
+  // );
+
   const categories = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.useSelect)(select => select('core').getEntityRecords('taxonomy', 'category',
   // may be -category and others
   {
     per_page: -1,
     orderby: 'name',
     order: 'asc',
-    _fields: 'id,name,slug,link'
+    _fields: 'id,name,slug,link,count'
   }) // !!!! поле id обязательно!!!! иначе не будет работать
   );
   const setTitle = newTitle => {
@@ -103,11 +109,13 @@ function Edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, title ? title : 'Categories', " ")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tag-detail"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", null, categories && categories.map(category => {
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
-      key: category.id
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-      href: category.link
-    }, " ", category.name, " "));
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+      key: category.id,
+      href: "{category.link}"
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
+      className: "fa fa-folder-open-o",
+      "aria-hidden": "true"
+    }), category.name, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, " ", category.count, " ")));
   }))))));
 }
 
