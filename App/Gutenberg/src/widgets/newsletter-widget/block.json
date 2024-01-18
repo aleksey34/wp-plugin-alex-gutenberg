@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "alex-gutenberg/newsletter-widget",
+	"version": "0.1.0",
+	"title": "Newsletter widget",
+	"category": "alex-gutenberg-widget",
+	"icon": "flag",
+	"description": "Widget - newsletter",
+	"supports": {
+	  "html": false
+	},
+	"attributes": {
+	  	"title":{
+		  "type": "string",
+		  "default": "Newsletter"
+		},
+		"description":{
+		  "type": "string",
+		  "default": "Subscribe to our email newsletter for useful tips and resources."
+		},
+		"placeholder":{
+		  "type": "string",
+		  "default": "Email Address"
+		},
+		"btnName":{
+		  "type": "string",
+		  "default": "Subscribe"
+		}
+	},
+	"textdomain": "alex-theme",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+  }
