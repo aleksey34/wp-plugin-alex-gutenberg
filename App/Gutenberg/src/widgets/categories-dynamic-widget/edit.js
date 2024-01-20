@@ -84,7 +84,7 @@ import { useSelect } from "@wordpress/data";
 						<h6>{ title ? title : 'Categories' } </h6>
 					</div>
 
-					<div className="tag-detail">
+					<div className="category-detail">
 						<ul>
 							{
 								categories && categories.map( (category)=>{

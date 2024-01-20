@@ -8,6 +8,7 @@ use AlexGutenberg\App\Gutenberg\Blocks\SlickSliderFromDefaultGallery;
 use AlexGutenberg\App\Gutenberg\Widgets\TagsDynamicWidget;
 use AlexGutenberg\App\Gutenberg\Inc\Api\RestPrepareDynamic;
 use AlexGutenberg\App\Gutenberg\Inc\CustomGutenbergCategory;
+use AlexGutenberg\App\Gutenberg\Inc\CustomImageSize;
 use AlexGutenberg\App\Gutenberg\Blocks\StaticBlocks;
 use AlexGutenberg\App\Gutenberg\Widgets\StaticWidgets;
 
@@ -39,6 +40,12 @@ class Gutenberg {
 		 *  prepare rest api request
 		 */
 		RestPrepareDynamic::instance();
+
+		/**
+		 * set custom image size - for recent post widget
+		 *  - and other if it needs
+		 */
+		CustomImageSize::instance();
 
 
 //===== BLOCKS ============================

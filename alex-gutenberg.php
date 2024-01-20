@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Alex Gutenberg blocks
+ * Plugin Name:       Alex Gutenberg
  * Description:       Additional func for AlexTheme
  * Requires at least: 1.0
  * Requires PHP: 7.4

@@ -52,7 +52,7 @@ class RecentPostDynamicWidget{
            $html .=
           '<div class="recent-detail">
 				<div class="recent-image">
-					<a href="'.get_permalink( $post).'"> <img width="88" height="88" src="'. get_the_post_thumbnail_url( $post ).'" alt="image"> </a>
+					<a href="'.get_permalink( $post).'"> <img src="'. get_the_post_thumbnail_url( $post , 'alex-recent-post-widget' ).'" alt="image"> </a>
 				</div>
 
 				<div class="recent-text">

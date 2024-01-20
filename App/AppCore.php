@@ -56,6 +56,8 @@ class AppCore {
 
 		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Inc/Api/RestPrepareDynamic.php';
 
+		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Inc/CustomImageSize.php';
+
 
 
 
@@ -66,7 +68,6 @@ class AppCore {
 	public function init(){
 
 		Gutenberg::instance();
-
 
 	}
 
