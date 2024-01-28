@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "alex-gutenberg/search-form-dynamic-widget",
+	"version": "0.1.0",
+	"title": "Search form widget",
+	"category": "alex-gutenberg-widget",
+	"icon": "flag",
+	"description": "Widget - Search form",
+	"supports": {
+	  "html": false
+	},
+	"attributes": {
+	  	"title":{
+		  "type": "string",
+		  "default": "Search here"
+		},
+
+		"placeholder":{
+		  "type": "string",
+		  "default": "Search..."
+		},
+		"btnName":{
+		  "type": "string",
+		  "default": "Search Now"
+		}
+	},
+	"textdomain": "alex-theme",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+  }

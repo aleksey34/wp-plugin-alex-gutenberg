@@ -8,11 +8,11 @@ class CategoriesDynamicWidget{
 
     public function __construct(){
 
-        add_action( 'init', [$this , 'eventsAllEvents'] );
+        add_action( 'init', [$this , 'init'] );
 
     }
 
-    public function  eventsAllEvents(){
+    public function  init(){
 
 
         register_block_type( plugin_dir_path(__DIR__) . 'build/widgets/categories-dynamic-widget',
@@ -51,7 +51,7 @@ class CategoriesDynamicWidget{
 	            $html .= get_term_link($term);
 	            $html .= '">
 								<i class="fa fa-folder-open-o" aria-hidden="true"></i>';
-				$html .=          $term->name;  	;
+				$html .=          $term->name;
 				$html .=		'<span>';
 				$html .=   $term->count  ;
 				$html .=        '</span>

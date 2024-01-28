@@ -8,11 +8,11 @@ class EventsAllEventsDynamic{
 
     public function __construct(){
 
-        add_action( 'init', [$this , 'eventsAllEvents'] );
+        add_action( 'init', [$this , 'init'] );
 
     }
 
-    public function  eventsAllEvents(){
+    public function  init(){
 
 
         register_block_type( plugin_dir_path(__DIR__) . 'build/blocks/dynamic-events-block',

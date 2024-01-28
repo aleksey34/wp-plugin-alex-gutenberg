@@ -5,6 +5,7 @@ use AlexGutenberg\App\Gutenberg\Widgets\CategoriesDynamicWidget;
 use AlexGutenberg\App\Gutenberg\Blocks\EventsAllEventsDynamic;
 use AlexGutenberg\App\Gutenberg\Widgets\RecentPostDynamicWidget;
 use AlexGutenberg\App\Gutenberg\Blocks\SlickSliderFromDefaultGallery;
+use AlexGutenberg\App\Gutenberg\Widgets\SearchFormDynamicWidget;
 use AlexGutenberg\App\Gutenberg\Widgets\TagsDynamicWidget;
 use AlexGutenberg\App\Gutenberg\Inc\Api\RestPrepareDynamic;
 use AlexGutenberg\App\Gutenberg\Inc\CustomGutenbergCategory;
@@ -12,6 +13,11 @@ use AlexGutenberg\App\Gutenberg\Inc\CustomImageSize;
 use AlexGutenberg\App\Gutenberg\Blocks\StaticBlocks;
 use AlexGutenberg\App\Gutenberg\Widgets\StaticWidgets;
 
+/**
+ * Class Gutenberg
+ * @package AlexGutenberg\App\Gutenberg
+ * классы запускаются  здесь . подключение самих файлов в AppCore.php
+ */
 
 class Gutenberg {
 
@@ -83,6 +89,10 @@ class Gutenberg {
 		 */
 		CategoriesDynamicWidget::instance();
 
+		/**
+		 * search form widget
+		 */
+		SearchFormDynamicWidget::instance();
 
 		/**
 		 * Static widget init

@@ -4,6 +4,13 @@ namespace AlexGutenberg\App;
 
 use AlexGutenberg\App\Gutenberg\Gutenberg;
 
+/**
+ * Class AppCore
+ * @package AlexGutenberg\App
+ *
+ * подключение файлов здесь
+ * использование классов в Gutenberg.php
+ */
 class AppCore {
 
 	private static $instance;
@@ -43,6 +50,7 @@ class AppCore {
 		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Widgets/RecentPostDynamicWidget.php';
 		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Widgets/TagsDynamicWidget.php';
 		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Widgets/CategoriesDynamicWidget.php';
+		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Widgets/SearchFormDynamicWidget.php';
 
 
 		require_once plugin_dir_path(__DIR__) . 'App/Gutenberg/Widgets/StaticWidgets.php';
